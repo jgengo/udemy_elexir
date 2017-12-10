@@ -23,7 +23,6 @@ defmodule DiscussWeb do
       import Plug.Conn
       import DiscussWeb.Router.Helpers
       import DiscussWeb.Gettext
-
     end
   end
 

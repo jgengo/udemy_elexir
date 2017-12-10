@@ -15,6 +15,8 @@ defmodule Discuss.AuthController do
 
 
   def signout(conn, _params) do
+    
+    # # I MADE THIS ONE AND I PREFER THIS ONE THAN THE OTHER ONE BELOW
     # conn
     # |> delete_session(:user_id)
     # |> put_flash(:info, "Sign out")
