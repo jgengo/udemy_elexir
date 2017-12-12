@@ -6,11 +6,15 @@ defmodule Discuss.Comment do
   alias Discuss.Comment
 
 
-  schema "topics" do
+  @derive {Poison.Encoder, only: [:content, :user]}
+
+  schema "comments" do
     field :content, :string
 
     belongs_to :user, Discuss.User
-    belongs_to :topic, Dicuss.Topic
+    belongs_to :topic, Discuss.Topic
+
+    timestamps()
   end
 
   @doc false

@@ -8,7 +8,7 @@ defmodule Discuss.Topic do
     field :title, :string
 
     belongs_to :user, Discuss.User
-    has_many :comments, Dicuss.Comment
+    has_many :comments, Discuss.Comment
   end
 
   @doc false
